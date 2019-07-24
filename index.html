@@ -3,18 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
 </head>
 <body>
 
-<div class="dropper">
-    <div class="draggable" draggable="true">#1</div>
-    <div class="draggable" draggable="true">#2</div>
-</div>
-<div class="dropper">
-    <div class="draggable" draggable="true">#3</div>
-    <div class="draggable" draggable="true">#4</div>
+<nav>
+    <ul>
+        <li><a href="#">}</a></li>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Prestations</a></li>
+        <li><a href="#">Réalisations</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Faq</a></li>
+        <li><a href="#">blog</a></li>
+    </ul>
+</nav>
+
+<div id="drop-container">
+    <ul class="dropper" id="left-dropper">
+        <li draggable="false">Je choisis les éléments de mon site</li>
+        <li class="draggable" draggable="true" tabindex="0">Site "One page"</li>
+        <li class="draggable" draggable="true" tabindex="0">Entre 2 et 10 pages</li>
+        <li class="draggable" draggable="true" tabindex="0">Plus de 10 pages</li>
+        <li class="draggable" draggable="true" tabindex="0">Formulaire de contact</li>
+        <li class="draggable" draggable="true" tabindex="0">Carte Google Map</li>
+        <li class="draggable" draggable="true" tabindex="0">Statistiques de visites</li>
+        <li class="draggable" draggable="true" tabindex="0">Blog / Publication d'actualités</li>
+        <li class="draggable" draggable="true" tabindex="0">Backoffice de gestion</li>
+        <li class="draggable" draggable="true" tabindex="0">Chat</li>
+        <li class="draggable" draggable="true" tabindex="0">Livre d'or</li>
+        <li class="draggable" draggable="true" tabindex="0">Avis / témoignages clients</li>
+        <li class="draggable" draggable="true" tabindex="0">CVthèque</li>
+        <li class="draggable" draggable="true" tabindex="0">Envoi de fichiers</li>
+        <li class="draggable" draggable="true" tabindex="0">Annuaire</li>
+        <li class="draggable" draggable="true" tabindex="0">Forum de discussion</li>
+        <li class="draggable" draggable="true" tabindex="0">Espace membres</li>
+        <li class="draggable" draggable="true" tabindex="0">Slider / Diaporama</li>
+        <li class="draggable" draggable="true" tabindex="0">Autre(s) animation(s)</li>
+        <li class="draggable" draggable="true" tabindex="0">Site multilingue</li>
+        <li class="draggable" draggable="true" tabindex="0">Newsletter</li>
+        <li class="draggable" draggable="true" tabindex="0">Module "Faire un don"</li>
+        <li class="draggable" draggable="true" tabindex="0">Système de paiement</li>
+        <li class="draggable" draggable="true" tabindex="0">API / Webservice</li>
+    </ul>
+
+    <div class="options-actions">
+        <button id="remove-option" title="Retirer une option. Raccourci : flèche gauche du clavier." class="remove-item active green-btn" type="button">
+            <!-- <span class="mo-remove-ico">retirer</span> -->
+            <span class="remove-ico"><i class="fas fa-chevron-left"></i>&nbsp;retirer</span>
+        </button>
+        <button id="add-option" title="Ajouter une option. Raccourci : flèche droite du clavier." class="add-item green-btn" type="button">
+            <!-- <span class="mo-add-ico">ajouter</span> -->
+            <span class="add-ico">ajouter&nbsp;<i class="fas fa-chevron-right"></i></span>
+        </button>
+    </div>
+
+    <ul class="dropper" id="right-dropper">
+        <li draggable="false"><i class="fas fa-cubes"></i> Mon site comporte</li>
+        <li class="draggable" draggable="true" tabindex="0">TEST</li>
+    </ul>
 </div>
 
-<script src="./dist/app.bundle.js"></script>
+<button class="green-btn center">Recevoir mon devis personnalisé</button>
+
+<!-- <script src="./dist/app.bundle.js"></script> -->
+<script src="./dist/move.bundle.js"></script>
 </body>
 </html>
